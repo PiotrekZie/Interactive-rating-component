@@ -1,11 +1,31 @@
-function test() {
-    var x = document.getElementById("two");
-    var y = document.getElementById("one");
+var value;
+var oldValue='';
+var a;
 
-    if (x.style.display === "none") {
-
-    } else {
-      x.style.display = "flex";
-      y.style.display = "none";
+function ratingValue(v){
+    value=v;
+    if(oldValue!=''){
+    a=document.getElementsByClassName('rating')[parseInt(oldValue)-1]; 
+    oldValue='';
     }
-  }
+    a=document.getElementsByClassName('rating')[parseInt(value)-1];
+    oldValue=value;
+}
+
+function disThanks(){
+
+    if(value==undefined){
+        alert("Coś tu poszło nie tak :/");
+    }
+    else
+    {
+        var beforeRating=document.getElementById('one');
+        beforeRating.style.display='none';
+
+        var activeRating=document.getElementById('two');
+        activeRating.style.display='flex';
+
+        var valueRate=document.getElementById('choice');
+        valueRate.innerHTML=value;
+    }
+}
