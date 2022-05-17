@@ -10,7 +10,7 @@
 </head>
 <body>
     <main class="card">
-        <section class="one">
+        <section class="one" id="one">
            <div class="star">
                 <img src="./images/icon-star.svg" alt="star">
            </div>
@@ -25,11 +25,22 @@
                 <div class="rating">4</div>
                 <div class="rating">5</div>
             </div>
-            <button class="submit">SUBMIT</button>
+            <button class="submit" id="btn" onclick="test()">SUBMIT</button>
         </section> 
-        <section class="two">
-
+        
+        <section class="two" id="two">
+            <div class="pic">
+                <img src="./images/illustration-thank-you.svg" alt="Thank you">
+            </div>
+            <div class="thanks">
+                <p>You selected <span id="choice"></span> out of 5</p>
+            </div>
+            <h2 class="title">Thank You!</h2>
+            <p class="content">
+                We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+            </p>
         </section>
     </main>
 </body>
+<script src="./main.js"></script>
 </html>
