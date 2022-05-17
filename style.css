@@ -16,8 +16,8 @@ body {
 }
 .card {
     background: radial-gradient(circle at top, #313949 -50%, #171e28 50% 100%);
-    height: auto;
-    width: auto;
+    height: 350px;
+    width: 350px;
     border-radius: 20px;
     padding: 30px;
     position: absolute;
@@ -103,10 +103,9 @@ body {
     cursor: pointer;
 }
 #two {
-    visibility: hidden;
+    display: none;
 }
 .two {
-    position: absolute;
     display: flex;
     flex-direction: column;
     text-align: center;

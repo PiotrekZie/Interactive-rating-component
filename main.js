@@ -1,10 +1,11 @@
 function test() {
     var x = document.getElementById("two");
     var y = document.getElementById("one");
-    if (x.style.visibility === "hidden") {
-      y.style.visibility = "hidden";
-      x.style.visibility = "visible";
+
+    if (x.style.display === "none") {
+
     } else {
-      x.style.visibility = "hidden";
+      x.style.display = "flex";
+      y.style.display = "none";
     }
   }
